@@ -1,0 +1,24 @@
+{
+    "name": "bluemodus",
+    "version": "1.0.0",
+    "description": "BlueModus Sample Page",
+    "main": "index.html",
+    "scripts": {
+        "start": "npm run watch:all",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lite": "lite-server",
+        "scss": "node-sass -o css/ css/",
+        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    },
+    "author": "R Brian Redd",
+    "license": "ISC",
+    "devDependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "font-awesome": "^4.7.0",
+        "lite-server": "^2.4.0",
+        "node-sass": "^4.9.1",
+        "onchange": "^4.0.0",
+        "parallelshell": "^3.0.2"
+    }
+}
